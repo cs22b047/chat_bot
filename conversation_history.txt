@@ -14,3 +14,5 @@ User: ram?
 Chatbot: 12GB
 User: all specs
 Chatbot: 6.7-inch OLED displays, Snapdragon 8 Gen 3 processors, 12GB RAM, and 256GB storage
+User: 	Specifications of the latest smartphones or laptops.
+Chatbot: 6.7-inch OLED displays, Snapdragon 8 Gen 3 processors, 12GB RAM, and 256GB storage
