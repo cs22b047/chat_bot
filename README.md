@@ -33,3 +33,9 @@ I manually tested the chatbot through command-line interaction:
 - Verified persistence by restarting the program and seeing previous chat retained.
 
 ---
+
+## Dependicies
+
+```
+pip install flask transformers
+```
