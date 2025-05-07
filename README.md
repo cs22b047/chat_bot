@@ -22,6 +22,7 @@ To enable multi-turn conversations:
 Each prompt includes:
 - A stringified version of the FAQs.
 - The last 10 user-chatbot exchanges.
+
 - The current user query.
 
 This helps the model generate more accurate and coherent replies.
@@ -38,4 +39,18 @@ I manually tested the chatbot through command-line interaction:
 
 ```
 pip install flask transformers
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
+Note: Use python package management system like conda while installing dependicies.
+
+## Web Interface
+
+I have implimented a simple flask server that communicates between index.html and chat_bot.py
+
+#### start the server
+```
+python app.py
+```
+#### Demo video
+[Screencast from 08-05-25 02:02:16 AM IST.webm](https://github.com/user-attachments/assets/4bd37cdc-169d-4fce-bffa-3e647022aaf6)
+
