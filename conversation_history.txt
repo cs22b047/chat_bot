@@ -1,2 +1,16 @@
 User: track my order
 Chatbot: You can track your order by going to our website and entering your order ID in the tracking section.
+User: How can i track my order?
+Chatbot: You can track your order by going to our website and entering your order ID in the tracking section.
+User: return policy
+Chatbot: Our return policy allows for returns within 30 days of purchase with a valid receipt.
+User: Available payment methods
+Chatbot: Credit cards, Debit Cards, UPI and Cash.
+User: Warranty information
+Chatbot: 1-year manufacturer's warranty
+User: storag information
+Chatbot: 256GB storage
+User: ram?
+Chatbot: 12GB
+User: all specs
+Chatbot: 6.7-inch OLED displays, Snapdragon 8 Gen 3 processors, 12GB RAM, and 256GB storage
