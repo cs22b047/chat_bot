@@ -34,8 +34,7 @@ def faq_to_string(faq):
     return "\n".join([f"{q} {a}" for q, a in faq.items()])
 
 # Get response with history context
-def get_response(query):
-    history = load_recent_history()
+def get_response(query, history):
     faq_string = faq_to_string(faq_data)
     context = "".join(history)
     prompt = f"You are a chatbot designed to answer questions based on the following FAQ:\n\n{faq_string}\n\n" \
@@ -43,5 +42,15 @@ def get_response(query):
              f"User question: {query}\n" \
              f"Answer:"
     response = chatbot(prompt, max_length=200)[0]['generated_text']
-    append_to_history(query, response)
     return response
+
+print("Chatbot: Hello! How can I help you today?")
+while True:
+    user_input = input("User: ")
+    if user_input.lower() == "exit":
+        print("Chatbot: Bye!")
+        break
+    recent_history = load_recent_history(10)
+    bot_response = get_response(user_input, recent_history)
+    print("Chatbot:", bot_response)
+    append_to_history(user_input, bot_response)
